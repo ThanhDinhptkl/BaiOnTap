@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnTap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="banner">
+        <img src="IMG/banner.png" alt="" srcset="">
+    </div>
+
+    <div class="GD_Home">
+        <a href="#">Trang Chủ</a>
+            <li class="active">
+                <a data-toggle="modal" href='#modal-id'>Đặt lịch</a>
+                <div class="modal fade" id="modal-id">
+                    <div class="modal-dialog">
+                        <!-- <div class="modal-content"> -->
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title">Đặt lịch khám online</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form action="" method="POST" role="form">
+                                    <div class="form-group">
+                                        <label for="">Mã bệnh nhân</label>
+                                        <input type="text" class="form-control" id="maBN" placeholder="Mã Bệnh Nhân">
+                                        <p class="thongbao">(*)BN-YYYYYY</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Mật khẩu</label>
+                                        <input type="" class="form-control" id="password" placeholder="Mật Khẩu">
+                                        <p class="thongbao">(*)</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Ngày khám</label>
+                                        <input type="" class="form-control" id="orderDate" placeholder="Ngày Khám">
+                                        <p class="thongbao">(*)</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Loại dịch vụ</label>
+                                        <div class="check">
+                                            <label>
+                                                <input name="" type="checkbox" value="">
+                                                Khám bệnh theo yêu cầu
+                                            </label>
+                                            <label>
+                                                <input name="" type="checkbox" value="">
+                                                Điều trị ngoại trú
+                                            </label>
+                                            <label>
+                                                <input name="" type="checkbox" value="">
+                                                Bác sĩ theo yêu cầu
+                                            </label>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Chuyên khoa</label>
+                                        <select id="" class="form-control" required="required">
+                                            <option value="1">Ngoại tổng quát</option>
+                                            <option value="2">Nhi</option>
+                                            <option value="3">Nội tổng quát</option>
+                                        </select>
+                                        
+                                    </div>
+                                    <button type="button" id="" class="btn btn-primary">Đặt lịch</button>
+                                </form>
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </li>
+    </div>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Mã bệnh nhân</th>
+                <th>Mật khẩu</th>
+                <th>Ngày khám</th>
+                <th>Phụ thu dịch vụ</th>
+                <th>Chuyên khoa</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>123456a</td>
+                <td>BN-012345</td>
+                <td>12/8/2020</td>
+                <td>1000000</td>
+                <td>Ngoại tổng quát</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2 class="sinhvien">21024081 - Nguyễn Thanh Định - DHKTPM17A</h2>
+
+    <script src="JS/js.js"></script>
+</body>
+</html>
